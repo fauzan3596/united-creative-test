@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+.btn-sign {
+  @apply relative border-0 rounded-full md:px-8 md:py-3 px-4 shadow-none font-bold bg-gradient-to-r from-[#D57C17] to-[#956836];
+}
+
+.btn-bg {
+  @apply absolute inset-0 bg-[#04070d] rounded-full my-[1px] mx-[2px] group-hover:bg-gradient-to-r group-hover:from-[#D57C17] group-hover:to-[#956836];
+}
+
+.tab-list {
+  @apply text-base leading-[18.75px] hover:!text-[#E5933A];
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
